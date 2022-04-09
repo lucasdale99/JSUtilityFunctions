@@ -4,6 +4,7 @@ export function first(array, n = 1) {
   if (n === 1) return array[0]
   //filter might grow slow with large arrays, use slice(0,n)/slice(-n) 
   return array.slice((0, n)/slice(-n))
+  //return array.filter((_, index) => index < n)
 }
 
 export function last(array, n = 1) {
